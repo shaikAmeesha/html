@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Architecture</title>
+    <style>
+        *{
+            margin:0;
+            top:0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .head{
+            background-color: white;
+            position:fixed;
+            top:0;
+            margin:0;
+            width:100%;
+            padding:1%;
+            z-index: 2;
+            box-sizing: border-box;
+        }
+        .head h2,.navchild{
+            display:inline-block;
+            padding-left:2%;
+            margin-top: 0.5%;
+            box-sizing: border-box;
+        }
+        .head>h2{
+            padding-right: 60%;
+            box-sizing: border-box;
+        }
+        .navchild p{
+            padding-left:25px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .main{
+            position:relative;
+        }
+        .main img{
+            width:100%;
+        }
+        .main h1{
+            position:absolute;
+            top:50%;
+            left:40%;
+            color:white;
+        }
+        .span{
+            background-color: black;
+            padding: 10px;
+        }
+        .project{
+            margin:3%;
+        }
+        .project h1{
+            margin: 5% 0%;
+        }
+        .pimg{
+            width:100%;
+        }
+        .child{
+            width:23.7%;
+            margin:0.5%;
+            display:inline-block;
+            position:relative;
+            box-sizing: border-box;
+        }
+        .child img{
+            width:100%;   
+        }
+        .child p{
+            position:absolute; 
+            color: white;
+            background-color: black;
+            padding:3%;
+        }
+        .about{
+            margin:3%;
+        }
+        .achild1 h1{
+            margin-bottom: 3%;
+        }
+        .achild2{
+            width: 100%;    
+        }
+        .img2{
+            width:23.7%;
+            display: inline-block;
+            box-sizing: border-box;
+            margin:0.5%;
+        }
+        .img2 img{
+            width:100%;
+        }
+        .img2 img,h3,p{
+            margin-bottom: 6%;
+        }
+        .span1{
+            color: dimgray;
+        }
+        .img2 p+p+p{
+            background-color:rgb(223, 222, 222);
+            text-align: center;
+            padding:3%;
+        }
+        .contact{
+            margin:3%;
+        }
+        .contact h1{
+            margin-bottom: 3%;
+        }
+        .contact p{
+            margin-bottom: 2%;
+        }
+        .contact input{
+            width:100%;
+            margin-bottom:1% ;
+            padding: 0.5%;
+            font-size: large;
+        }
+        .contact button{
+            padding:0.5%;
+            font-size: medium;
+            background-color: black;
+            color: white;
+        }
+        .img3 img{
+            width: 90%;
+            margin:1% 5%;
+            box-sizing: border-box;
+        }
+        .foot p{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 2.5%;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h2>B R Architecture</h2>
+            <div class="navchild">
+                <p>Projects</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main">
+                <img src="https://www.w3schools.com/w3images/architect.jpg" alt="image">
+                <h1> <span class="span">B R</span>
+                    Architecture</h1>
+            </div>
+        </section>
+        <section class="project">
+            <h1>Projects</h1>
+            <div class="pimg">
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" class="pimg2">
+                    <p>Summer House</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" class="pimg2">
+                    <p>Brick House</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated" class="pimg2">
+                    <p>Renovated</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House" class="pimg2">
+                    <p>Barn House</p>
+                </div>
+            </div>
+            <div class="pimg">
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" class="pimg2">
+                    <p>Summer House</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" class="pimg2">
+                    <p>Brick House</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated" class="pimg2">
+                    <p>Renovated</p>
+                </div>
+                <div class="child">
+                    <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House" class="pimg2">
+                    <p>Barn House</p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="achild1">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="achild2">
+                <div class="img2">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p><span class="span1">CEO & Founder</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p>Contact</p>
+                </div>
+                <div class="img2">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe">
+                    <h3>Jane Doe</h3>
+                    <p><span class="span1">Architect</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p>Contact</p>
+                </div>
+                <div class="img2">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross">
+                    <h3>Mike Ross</h3>
+                    <p><span class="span1">Architect</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p>Contact</p>
+                </div>
+                <div class="img2">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star">
+                    <h3>Dan Star</h3>
+                    <p><span class="span1">Architect</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="post">
+                <input type="text" name="name" id="" placeholder="Name"><br>
+                <input type="text" name="email" id="" placeholder="Email"><br>
+                <input type="text" name="subject" id="" placeholder="Subject"><br>
+                <input type="text" name="comment" id="" placeholder="Comment"><br>
+                <button>SEND MESSAGE</button>
+            </form>
+        </section>
+        <section class="img3">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+        </section>
+    </main>
+    <footer class="foot">
+        <p>Powered by Amisha</p>
+    </footer>
+</body> 
