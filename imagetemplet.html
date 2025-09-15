@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Layout</title>
+    <style>
+        
+        .parent{
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            'img1 img2 img3 img4'
+            'img1 img5 img6 img4'
+            'img7 img5 img8 img9'
+            'img10 img11 img12 img13';
+             width: 500px;
+             height: 500px;
+            
+            
+             }
+        .img1{
+            grid-area: img1;
+            
+        }
+        .img2{
+            grid-area: img2;
+            
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        .img5{
+            grid-area: img5;
+            
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+        .img9{
+            grid-area: img9;
+        }
+        .img10{
+            grid-area: img10;
+        }
+        .img11{
+            grid-area: img11;
+        }
+        .img12{
+            grid-area: img12;
+            
+            
+        }
+        .img13{
+            grid-area: img13;
+        }
+        .parent img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://i.pinimg.com/1200x/4a/19/ac/4a19ace2c10e8dda74cb256d77eb7dd3.jpg" alt="" class="img1">
+        <img src="https://i.pinimg.com/736x/bc/8e/af/bc8eaf73e3c0b34be8bfe954688a143b.jpg" alt="" class="img2">
+        <img src="https://i.pinimg.com/736x/93/44/8a/93448a4488751eb94c2b1d938f53f852.jpg" alt="" class="img3">
+        <img src="https://i.pinimg.com/736x/d0/11/57/d011574c9ccc5771ec7f762a13c8643d.jpg" alt="" class="img4">
+        <img src="https://i.pinimg.com/736x/56/1f/16/561f1610f71b665cd07f9c1a4996bbdb.jpg" alt="" class="img5">
+        <img src="https://i.pinimg.com/736x/76/28/81/76288128708a7957791225c155c753b7.jpg" alt="" class="img6">
+        <img src="https://i.pinimg.com/736x/6a/63/62/6a6362111276e1ab7b15557a1f4c6490.jpg" alt="" class="img7">
+        <img src="https://i.pinimg.com/736x/1f/16/a3/1f16a39cf5a2872587e2cf6227426195.jpg" alt="" class="img8">
+        <img src="https://i.pinimg.com/736x/97/92/8e/97928e9fd59630e64146e76652ed9afd.jpg" alt="" class="img9">
+        <img src="https://i.pinimg.com/736x/19/27/36/192736a0e0a7b35334caeb1e8f09c600.jpg" alt="" class="img10">
+        <img src="https://i.pinimg.com/736x/61/c3/8f/61c38f9af044b0cc065c369a406f1d0f.jpg" alt="" class="img11">
+        <img src="https://i.pinimg.com/736x/48/3f/4c/483f4c9739b7881e9689474e469669c4.jpg" alt="" class="img12">
+        <img src="https://i.pinimg.com/736x/78/96/d1/7896d10cda367f017dbdd35bccc80aa1.jpg" alt="" class="img13">
+    </div>
+</body>
+</html>
